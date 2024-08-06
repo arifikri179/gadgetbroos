@@ -1,0 +1,669 @@
+html,
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1d2d4b; /* Warna latar belakang utama */
+  color: #333;
+  height: 90%;
+  width: 100%;
+}
+.navbar {
+  background-color: #1d2d4b; /* Dark blue background color */
+}
+
+/* Navbar brand text color */
+.navbar .navbar-brand {
+  color: white; /* White text color */
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand:hover {
+  color: #f0f0f0; /* Lighter color on hover */
+}
+
+/* Navbar links color */
+.navbar-nav .nav-link {
+  color: white; /* White text color */
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0f0f0; /* Lighter color on hover */
+}
+
+/* Navbar social icons color */
+.navbar .d-flex a {
+  color: white; /* White color for social media icons */
+  text-align: center;
+}
+
+.navbar .d-flex a:hover {
+  color: #f0f0f0; /* Lighter color on hover */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border */
+  color: white; /* Make background transparent */
+  background: none; /* Make background transparent */
+}
+
+.navbar-toggler .bi-list,
+.navbar-toggler .bi-x {
+  color: white; /* Change color of the icon to white */
+  font-size: 1.5rem; /* Adjust font size if needed */
+}
+
+.navbar-toggler .bi-x {
+  display: none; /* Initially hide the 'X' icon */
+}
+
+.navbar-toggler:hover .bi-list {
+  color: #ffffff; /* Optional: Change color on hover if desired */
+}
+
+/* Show 'X' icon and hide 'hamburger' icon when menu is open */
+.collapse.show .navbar-toggler .bi-list {
+  display: none;
+}
+
+.collapse.show .navbar-toggler .bi-x {
+  display: inline; /* Show the 'X' icon when menu is open */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#home.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+body.transitioning {
+  overflow: hidden; /* Mencegah scroll selama transisi */
+}
+#home {
+  position: relative;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 90px 0;
+  background-color: #1d2d4b;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  text-align: center;
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 1s ease-out forwards; /* Animation with fadeInUp effect */
+}
+
+.header-content h1,
+.header-content h2,
+.header-content p,
+.header-content .btn-container {
+  margin: 20px 0;
+}
+
+.header-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #f8f9fa;
+  margin-bottom: 5px; /* Kurangi margin bawah */
+}
+
+.header-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #f8f9fa;
+  margin-top: 5px; /* Kurangi margin atas */
+  margin-bottom: 15px; /* Atur jarak bawah */
+}
+
+.header-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #f8f9fa;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.header-content .btn-container .btn {
+  display: inline-block;
+  background-color: #451fdc;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.header-content .btn-container .btn:hover {
+  background-color: #3e14b7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .header-content h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .header-content .btn-container .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Media Queries for mobile phones */
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 16px; /* Font size for phones */
+    line-height: 22px;
+    text-align: center; /* Center text horizontally */
+  }
+
+  .header-content h2 {
+    font-size: 28px; /* Font size for phones */
+    line-height: 34px;
+  }
+
+  .header-content .btn {
+    padding: 0.5rem 1rem; /* Padding for phones */
+    font-size: 12px;
+  }
+
+  .header-content p {
+    font-size: 12px; /* Font size for phones */
+    line-height: 1.4;
+  }
+}
+
+/* Services Section Styles */
+
+.order-btn:hover {
+  background-color: #303f60;
+  transform: translateY(-3px);
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section .btn {
+  background-color: #415378;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section .btn:hover {
+  background-color: #303f60;
+  transform: translateY(-3px);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1d2d4b;
+  color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.WA_Chat_Widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.WA_ChatBox {
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+}
+
+.WA_ChatBox_Header {
+  display: flex;
+  align-items: center;
+  background-color: #25d366;
+  padding: 1rem;
+  color: #fff;
+}
+
+.WA_ChatBox_Header .avatarBox img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.WA_ChatBox_Header .name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.WA_ChatBox_Header .WA_Close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.WA_ChatBox_Body {
+  padding: 1rem;
+  background-color: #e6ddd4;
+}
+
+.WA_ChatBox_Footer {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.WA_FloatingButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.WA_FloatingButton svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Membungkus baris saat elemen terlalu banyak */
+  justify-content: center; /* Menempatkan elemen di tengah */
+  gap: 15px; /* Jarak antar elemen kartu */
+  padding: 30px; /* Memberikan padding untuk ruang di sekitar */
+}
+
+/* Kontainer kartu */
+.subscription-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px; /* Sedikit melengkung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih ringan */
+  padding: 15px;
+  width: 240px; /* Lebar yang lebih kecil */
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0; /* Mulai dari tidak terlihat */
+  transform: translateY(15px); /* Mulai dengan sedikit posisi turun */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transisi untuk opacity dan posisi */
+}
+
+.subscription-card.visible {
+  animation: fadeInUp 0.2s forwards; /* Menjalankan animasi */
+}
+
+/* Judul kartu */
+.subscription-card.visible h2 {
+  font-size: 1.5rem; /* Ukuran font yang lebih kecil */
+  margin-bottom: 10px;
+}
+
+#subscription-plans h1,
+.card-container h1 {
+  color: rgb(255, 255, 255); /* Warna teks putih */
+  text-align: center; /* Posisikan teks di tengah */
+  background-color: transparent; /* Pastikan latar belakang transparan */
+  margin: 0; /* Hilangkan margin default */
+  padding: 0; /* Hilangkan padding default */
+}
+
+.card-container {
+  background-color: transparent; /* Pastikan tidak ada latar belakang */
+  margin: 0; /* Hilangkan margin default */
+  padding: 0; /* Hilangkan padding default */
+}
+
+/* Opsi yang dapat dipilih */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Jarak antar opsi yang lebih kecil */
+  margin-bottom: 10px;
+}
+
+.option {
+  padding: 4px 8px; /* Padding lebih kecil untuk latar belakang yang lebih kompak */
+  border-radius: 15px; /* Sudut melengkung yang lebih kecil */
+  background-color: #f0f0f0; /* Warna latar belakang yang lembut */
+  font-size: 0.7rem; /* Ukuran font sedikit lebih kecil */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi untuk warna latar belakang dan teks */
+  display: inline-flex; /* Menyelaraskan elemen dalam baris dengan flexbox */
+  align-items: center; /* Menyelaraskan teks secara vertikal di tengah */
+  justify-content: center; /* Menyelaraskan teks secara horizontal di tengah */
+  font-weight: 500; /* Font yang lebih tebal untuk visibilitas */
+}
+
+.option:hover {
+  background-color: #ddd; /* Warna latar belakang saat hover */
+}
+
+.option.active {
+  background-color: #333; /* Warna latar belakang saat aktif */
+  color: #fff; /* Warna teks saat aktif */
+  font-weight: 600; /* Font yang lebih tebal saat aktif */
+}
+
+/* Daftar fitur */
+.subscription-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px; /* Jarak bawah yang lebih kecil */
+}
+
+.subscription-card ul li {
+  font-size: 0.8rem; /* Ukuran font yang lebih kecil */
+  margin-bottom: 6px;
+}
+
+/* Harga di bagian bawah */
+.price {
+  font-size: 1rem; /* Ukuran font yang lebih kecil */
+  font-weight: bold;
+  margin-top: auto; /* Menyebabkan elemen ini untuk menempel di bagian bawah */
+  padding-top: 20px; /* Padding atas yang lebih kecil */
+  border-top: 1px solid #e0e0e0; /* Garis pemisah */
+  color: #333;
+}
+
+/* Testimonials Section Styles */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 1.5rem; /* Padding di kiri dan kanan untuk container */
+}
+
+.testimonial {
+  background: #1d2d4b;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 1rem; /* Margin di kiri dan kanan untuk setiap card */
+}
+
+.testimonials-section {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 5rem; /* Menambah jarak dari section atas */
+  border-radius: 10px;
+}
+
+.testimonials-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  position: relative;
+}
+
+.testimonials-section h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #1d2d4b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem; /* Menambahkan padding di kiri dan kanan */
+  }
+
+  .testimonial {
+    max-width: 100%;
+    margin-bottom: 1.5rem; /* Menambah jarak antar testimonial pada perangkat kecil */
+    margin: 0 0.5rem; /* Menambahkan margin di kiri dan kanan pada perangkat kecil */
+  }
+
+  .testimonials-section {
+    margin-top: 3rem; /* Menyesuaikan jarak atas pada layar lebih kecil */
+  }
+}
+
+/* Tombol Mengambang Persegi Panjang */
+.floating-button-rect {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1d2d4b;
+  color: #fff;
+  border-radius: 10px;
+  width: 120px; /* Lebar tombol */
+  height: 60px; /* Tinggi tombol */
+  display: flex;
+  flex-direction: column; /* Susun ikon dan teks secara vertikal */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  padding: 10px; /* Menambah padding */
+}
+
+.floating-button-rect:hover {
+  background-color: #87a6df;
+  transform: translateY(-3px);
+}
+
+.floating-button-rect i {
+  font-size: 1.5rem;
+  margin-bottom: 5px; /* Jarak antara ikon dan teks */
+}
+
+.floating-button-rect span {
+  font-size: 1rem; /* Ukuran font teks */
+  text-align: center; /* Teks di tengah */
+}
+
+.how-to-order-section {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 5rem; /* Memberi jarak dari section sebelumnya */
+}
+
+.how-to-order-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  position: relative;
+}
+
+.how-to-order-section h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #1d2d4b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.how-to-order-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.order-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.order-steps li {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.order-steps li::before {
+  content: "\2022"; /* Bullet point */
+  color: #1d2d4b;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.order-whatsapp {
+  margin-top: 2rem;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebc59;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .how-to-order-section h1 {
+    font-size: 2rem;
+  }
+
+  .how-to-order-section p {
+    font-size: 1rem;
+  }
+
+  .order-steps {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .order-steps li {
+    font-size: 0.9rem;
+  }
+
+  .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+}

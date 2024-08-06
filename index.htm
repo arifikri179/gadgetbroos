@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GadgetBroos - Jual Akun Premium</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">GadgetBroos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list" id="navbar-toggler-icon"></i>
+          <i class="bi bi-x" id="navbar-toggler-close"></i>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto my-3 my-lg-0 d-flex align-items-center">
+            <li class="nav-item"><a class="nav-link me-lg-3" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link me-lg-3" href="#subscription-plans">Price</a></li>
+            <li class="nav-item"><a class="nav-link me-lg-3" href="#testimonials">Testimonial</a></li>
+            <li class="nav-item"><a class="nav-link me-lg-3" href="#how-to-order">How to Order</a></li>
+          </ul>
+    
+          <div class="d-flex align-items-center">
+            <a href="https://wa.me/6281939248903" target="_blank" class="me-2">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/gadgetbrossid" target="_blank" class="me-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@gadgetbross_" target="_blank" class="me-2">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+    
+    <header id="home">
+      <div class="header-content">
+        <h1>Supplier Firsthand Aplikasi Premium Murah & Bergaransi</h1>
+        <h2>APLIKASI PREMIUM</h2>
+        <div class="btn-container">
+          <a href="https://wa.me/6281939248903" class="btn">ORDER SEKARANG</a>
+        </div>
+        <p>
+          GadgetBroos menyediakan berbagai macam pilihan aplikasi premium, mulai
+          dari streaming apps hingga editing apps. Jaminan Harga termurah dan
+          Bergaransi.
+        </p>
+      </div>
+    </header>
+    <div class="WA_Chat_Widget" data-position="bottom-right">
+      <div class="WA_ChatBox">
+        <div class="WA_ChatBox_Header">
+          <div class="avatarBox">
+            <img src="4442333 - Copy.png" alt="Chat Avatar" />
+          </div>
+          <div class="infoBox">
+            <h4 class="name">Admin</h4>
+            <span class="answer_time">online 8.00 AM - 16.00 PM WIB</span>
+          </div>
+          <button class="WA_Close" onclick="hideChatbox()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="WA_ChatBox_Body">
+          <div class="message">
+            <h4 class="username">GadgetBroos</h4>
+            <div class="message_content">
+              <p>Hallo, Ada yang bisa kami bantu?</p>
+            </div>
+          </div>
+        </div>
+        <div class="WA_ChatBox_Footer">
+          <a
+            class="btn btn-whatsapp"
+            href="http://wa.me/6285724320849"
+            target="_blank"
+            >Start Chat</a
+          >
+        </div>
+      </div>
+      <div class="WA_FloatingButton" onclick="toggleChatbox()">
+        <svg
+          xmlns="admin.svg"
+          fill="#4FCE5D"
+          viewBox="0 0 90 90"
+        >
+          <path
+            d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 01-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 01-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0045.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <section id="subscription-plans">
+      <h1>Streaming Film</h1>
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="subscription-card visible">
+          <h2>Disney + Hotstar</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="subscription-card visible">
+          <h2>Netflix Premium</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="subscription-card visible">
+          <h2>HBO Go</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="subscription-card visible">
+          <h2>Prime Video</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="subscription-card visible">
+          <h2>Viu Premium</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="subscription-card visible">
+          <h2>WeTV</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="subscription-card visible">
+          <h2>Vidio Platinum</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="subscription-card visible">
+          <h2>Iqiyi</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="subscription-card visible">
+          <h2>Bstation</h2>
+          <div class="options">
+            <span class="option active">Sharing 6U</span>
+            <span class="option active">Sharing 4U</span>
+            <span class="option active">Private</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+      </div>
+      <h1>Streaming Musik</h1>
+      <div class="card-container">
+        <div class="subscription-card visible">
+          <h2>Apple Music</h2>
+          <div class="options">
+            <span class="option active">Individual</span>
+            <span class="option active">Student</span>
+            <span class="option active">Family</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>High Audio Quality</li>
+            <li>Dolby Atmos</li>
+            <li>Support All Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="subscription-card visible">
+          <h2>Spotify Premium</h2>
+          <div class="options">
+            <span class="option active">Individual</span>
+            <span class="option active">Duo</span>
+            <span class="option active">Family</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>Akun Sendiri</li>
+            <li>Bisa Download Musik</li>
+            <li>Putar Tanpa Iklan</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+      </div>
+      <!-- other apps -->
+      <h1>Other Apps</h1>
+      <div class="card-container">
+        <div class="subscription-card visible">
+          <h2>Canva Pro</h2>
+          <div class="options">
+            <span class="option active">1 Bulan</span>
+            <span class="option active">3 Bulan</span>
+            <span class="option active">1 Tahun</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="subscription-card visible">
+          <h2>Zoom Pro</h2>
+          <div class="options">
+            <span class="option active">1 Bulan</span>
+            <span class="option active">3 Bulan</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>4K Ultra HD</li>
+            <li>Support All Device</li>
+            <li>Sharing Max Login 1 Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="subscription-card visible">
+          <h2>Turnitin</h2>
+          <div class="options">
+            <span class="option active">1 Cek</span>
+            <span class="option active">3 Cek</span>
+            <span class="option active">10 Cek</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>Support All Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="subscription-card visible">
+          <h2>Express VPN</h2>
+          <div class="options">
+            <span class="option active">1 Bulan</span>
+            <span class="option active">1 Tahun</span>
+          </div>
+          <ul>
+            <li>Akun Legal</li>
+            <li>Full Garansi</li>
+            <li>Support All Device</li>
+            <li>Langsung Kirim</li>
+          </ul>
+          <div class="price">
+            <span>18k | 30k | 135k</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials-section">
+      <h1>Testimonials</h1>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p class="testimonial-text">"Saya sangat puas dengan layanan Canva Pro yang saya beli di sini. Fitur-fiturnya lengkap dan sangat membantu dalam pekerjaan desain grafis saya. Proses pembelian cepat dan mudah, serta layanan pelanggan sangat responsif. Terima kasih!"</p>
+          <p class="testimonial-author">- Ari Fikriyadi</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Membeli langganan Spotify Premium melalui layanan ini adalah keputusan terbaik! Musik tanpa iklan, kualitas audio tinggi, dan layanan pelanggan yang siap membantu kapan saja. Pasti akan berlangganan lagi di sini."</p>
+          <p class="testimonial-author">- Dzaki Siregar</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Saya memesan langganan Netflix Premium dan sangat senang dengan hasilnya. Semua film dan serial bisa dinikmati tanpa gangguan. Proses transaksi sangat mudah dan cepat. Sangat direkomendasikan!"</p>
+          <p class="testimonial-author">- Alya Quita</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Langganan Disney+ Hotstar di sini sangat memuaskan. Banyak film favorit bisa ditonton dengan kualitas tinggi. Proses pemesanan juga cepat dan efisien. Terima kasih!"</p>
+          <p class="testimonial-author">- Indra Lesmana</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Saya menggunakan layanan WeTV Premium yang saya beli di sini. Semua drama favorit saya bisa ditonton dengan kualitas terbaik. Sangat puas dengan layanan yang diberikan!"</p>
+          <p class="testimonial-author">- Siti Aisyah</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Layanan pelanggan yang sangat ramah dan proses yang mudah membuat saya memilih untuk berlangganan Prime Video di sini. Kualitas streaming sangat baik dan saya menikmati setiap konten yang ada."</p>
+          <p class="testimonial-author">- Rendy Hidayat</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Saya sangat merekomendasikan layanan ini untuk berlangganan Viu Premium. Banyak drama dan film favorit bisa ditonton tanpa gangguan. Proses pemesanan juga sangat cepat dan mudah."</p>
+          <p class="testimonial-author">- Maya Larasati</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Menggunakan layanan Zoom Pro yang saya beli di sini sangat membantu dalam meeting online. Kualitas video dan suara sangat baik. Layanan pelanggan juga cepat tanggap dalam membantu."</p>
+          <p class="testimonial-author">- Budi Santoso</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Express VPN yang saya beli di sini bekerja dengan sangat baik. Keamanan dan privasi terjaga, serta kecepatan akses sangat memuaskan. Sangat puas dengan layanan ini."</p>
+          <p class="testimonial-author">- Laila Salsabila</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Menggunakan layanan Turnitin dari sini sangat membantu dalam pengecekan plagiat untuk tugas kuliah saya. Sangat direkomendasikan untuk para mahasiswa dan profesional!"</p>
+          <p class="testimonial-author">- Arif Wicaksono</p>
+        </div>
+      </div>      
+    </section>
+
+    <a href="#how-to-order" class="floating-button-rect">
+      <i class="fas fa-info-circle"></i>
+      <span>How to Order?</span>
+    </a>
+
+    <section id="how-to-order" class="how-to-order-section">
+      <div class="container">
+        <h1>How To Order?</h1>
+        <p>Panduan cara memesan produk :</p>
+        <ol class="order-steps">
+          <li>Pilih produk yang anda inginkan</li>
+          <li>Klik link WhatsApp di bawah</li>
+          <li>Tanyakan ketersediaan pada admin di WhatsApp</li>
+          <li>Isi format order yang diberikan admin</li>
+          <li>Lakukan pembayaran (sertakan bukti pembayaran)</li>
+          <li>Akun akan dikirimkan oleh admin kita</li>
+        </ol>
+        <div class="order-whatsapp">
+          <a href="https://wa.me/081939248903" target="_blank" class="btn-whatsapp">
+            Hubungi Kami di WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+      <p>&copy; 2024 GadgetBroos. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".subscription-card");
+      let isChatboxVisible = false;
+      const chatbox = document.getElementById("chatbox"); // Pastikan elemen ini ada dalam HTML Anda
+
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        console.log("Element Rect:", rect); // Debugging output
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function onVisibilityChange() {
+        console.log("Checking visibility..."); // Debugging output
+        cards.forEach((card) => {
+          if (isElementInViewport(card)) {
+            card.classList.add("visible");
+            console.log("Visible:", card); // Debugging output
+          } else {
+            card.classList.remove("visible");
+            console.log("Not visible:", card); // Debugging output
+          }
+        });
+      }
+
+      window.addEventListener("scroll", function () {
+        console.log("Scroll event detected"); // Debugging output
+        onVisibilityChange();
+      });
+
+      window.addEventListener("resize", function () {
+        console.log("Resize event detected"); // Debugging output
+        onVisibilityChange();
+      });
+
+      window.addEventListener("load", function () {
+        console.log("Page loaded"); // Debugging output
+        onVisibilityChange();
+      });
+
+      onVisibilityChange();
+
+      mobileMenu.addEventListener("click", function () {
+        console.log("Mobile menu clicked"); // Debugging output
+        navLinks.classList.toggle("show");
+        mobileMenu.classList.toggle("open");
+      });
+
+      // Fungsi untuk menampilkan harga (Contoh)
+      function showPrices() {
+        const category = document.getElementById("category").value;
+        console.log("Selected category:", category); // Debugging output
+        const priceListContainer = document.getElementById("price-lists");
+        priceListContainer.innerHTML = ""; // Clear current content
+
+        // Assume prices is an array of objects with plan, price, and features
+        prices[category].forEach((plan) => {
+          console.log("Adding plan:", plan); // Debugging output
+          const priceCard = document.createElement("div");
+          priceCard.className = "price-card";
+
+          priceCard.innerHTML = `
+            <h2>${plan.plan}</h2>
+            <p class="price">${plan.price}<span>/Per Month</span></p>
+            <ul>${plan.features
+              .map((feature) => `<li>${feature}</li>`)
+              .join("")}</ul>
+            <a href="#" class="btn">BUY NOW</a>
+          `;
+
+          priceListContainer.appendChild(priceCard);
+        });
+      }
+
+      // Fungsi untuk menampilkan gambar sebelumnya pada carousel
+      function prevSlide(carouselId) {
+        console.log("Previous slide clicked for:", carouselId); // Debugging output
+        $(carouselId).carousel("prev");
+      }
+
+      // Fungsi untuk menampilkan gambar berikutnya pada carousel
+      function nextSlide(carouselId) {
+        console.log("Next slide clicked for:", carouselId); // Debugging output
+        $(carouselId).carousel("next");
+      }
+
+      // Fungsi untuk menyembunyikan chatbox
+      function hideChatbox() {
+        console.log("Hiding chatbox"); // Debugging output
+        isChatboxVisible = false;
+        chatbox.style.display = "none";
+      }
+
+      // Fungsi untuk menampilkan atau menyembunyikan chatbox
+      function toggleChatbox() {
+        console.log("Toggling chatbox visibility"); // Debugging output
+        isChatboxVisible = !isChatboxVisible;
+        chatbox.style.display = isChatboxVisible ? "block" : "none";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var cards = document.querySelectorAll(".subscription-card");
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Hentikan pengamatan setelah kelas visible ditambahkan
+              }
+            });
+          },
+          { threshold: 0.1 }
+        ); // 10% dari elemen harus terlihat
+
+        cards.forEach(function (card) {
+          observer.observe(card);
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var toggleButton = document.getElementById('mobile-menu');
+      var menu = document.getElementById('navbar-menu');
+    
+      toggleButton.addEventListener('click', function() {
+        menu.classList.toggle('active');
+      });
+    });
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+</html>
